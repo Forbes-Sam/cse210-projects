@@ -8,29 +8,41 @@ class Program
         string sfPercentInput = Console.ReadLine();
         float sfGrade = float.Parse(sfPercentInput);
 
+        string sfLetter = "unknown";
+
         if (sfGrade >= 90)
         {
-            Console.WriteLine("You have an A");
+            sfLetter = "A";
         }
         else if (sfGrade >= 80)
         {
-            Console.WriteLine("You have an B");
+            sfLetter = "B";
         } 
         else if (sfGrade >= 70)
         {
-            Console.WriteLine("You have an C");
+            sfLetter = "C";
         } 
         else if (sfGrade >= 60)
         {
-            Console.WriteLine("You have an D");
+            sfLetter = "D";
         } 
         else if (sfGrade < 60)
         {
-            Console.WriteLine("You have an F");
+            sfLetter = "F";
         } 
         else
         {
             Console.WriteLine("Not a valid input");
+        }
+        Console.WriteLine($"Your grade is a {sfLetter}");
+
+        if (sfGrade >= 70)
+        {
+            Console.WriteLine($"You passed");
+        }
+        else
+        {
+            Console.WriteLine("Sorry you didnt pass");
         }
 
     }
