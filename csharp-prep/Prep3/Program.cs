@@ -1,5 +1,6 @@
 // Sam Forbes
 // CSE 210
+// This program generates a random number between 1-100 and has the user guess until they get the correct answer
 
 using System;
 
