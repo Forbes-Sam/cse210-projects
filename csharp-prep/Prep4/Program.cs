@@ -1,7 +1,10 @@
+// Samuel Forbes
+// CSE 210
+// Prep 4 assinment
+// this program collects numbers from the user and saves it as a 
+// list and calculates the total, average and the largest number.
 using System;
 using System.Collections.Generic;
-using System.Transactions;
-using System.Xml.Schema;
 
 class Program
 {
