@@ -1,5 +1,10 @@
-using System;
+//Sam Forbes
+//CSE 210
+//Prep 5 assinment
+// this program uses functions that gets the users name and favorite 
+// number than calculates the square and displays it back to the user
 
+using System;
 class Program
 {
         static void sfDisplayWelcome ()
