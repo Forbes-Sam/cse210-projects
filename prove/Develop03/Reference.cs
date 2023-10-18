@@ -1,18 +1,19 @@
 //Samuel Forbes
 using System;
 
-class reference
+class Reference
 {
     private string sfGetReference;
-    public string sfGetText;
-    public list <string> sfResponse = new list <string>();
+    private string sfGetText;
+    private list <string> sfResponse = new list <string>();
 
     public reference()
     {
         sfGetReference = ""
         sfGetText = ""
+
     }
-    static list<string> sfGetPrompt()
+    public list<string> sfGetPrompt()
     {
         Console.Write("What is the scripture reference? ");
         sfGetReference = Console.ReadLine() ;
