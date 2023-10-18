@@ -5,23 +5,24 @@ class Reference
 {
     private string sfGetReference;
     private string sfGetText;
-    private list <string> sfResponse = new list <string>();
+    private List <string> sfResponse = new List <string>();
 
-    public reference()
+    public Reference()
     {
-        sfGetReference = ""
-        sfGetText = ""
+        sfGetReference = "";
+        sfGetText = "";
 
     }
-    public list<string> sfGetPrompt()
+    public List<string> sfGetPrompt()
     {
         Console.Write("What is the scripture reference? ");
         sfGetReference = Console.ReadLine() ;
 
-        Console.write("What is the scripture? ");
-        sfGetText = console.ReadLine();
+        Console.Write("What is the scripture? ");
+        sfGetText = Console.ReadLine();
 
-        sfResponse.Add
+        sfResponse.Add(sfGetReference);
+        sfResponse.Add(sfGetText);
         
         return sfResponse;
     }
