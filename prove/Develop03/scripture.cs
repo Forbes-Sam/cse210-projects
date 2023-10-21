@@ -36,6 +36,22 @@ class Scripture
             displayWords.Add(word.sfHideOrShow());
         }
         return $"{sfReference}: {string.Join(" ", displayWords)}";
-        
+
+    }
+
+    public bool AreAllWordsHidden() 
+    {
+        return sfWords.All(word => word.sfGetHidden());
+    }
+
+    public void HideRandomWord() 
+    {
+        Random random = new Random();
+        int index;
+        do {
+            index = random.Next(sfWords.Count);
+        } while (sfWords[index].sfGetHidden());
+
+        sfWords[index].sfHide();
     }
 }

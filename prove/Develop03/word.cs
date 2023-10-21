@@ -1,5 +1,7 @@
 // Samuel Forbes
 // This code is so much fun
+//CSE 210
+// Scripture memorizer
 using System;
 
 class Word
