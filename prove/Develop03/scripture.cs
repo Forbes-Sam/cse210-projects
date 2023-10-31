@@ -21,7 +21,7 @@ class Scripture
         sfReference = reference;
         sfWords = new List<Word>();
         
-        string[] wordsArray = text.Split(" ");
+        string[] wordsArray = text.Split(' ');
         foreach (string word in wordsArray)
         {
             sfWords.Add(new Word(word));

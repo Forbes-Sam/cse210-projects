@@ -9,12 +9,6 @@ class Reference
     private string sfGetReference;
     private string sfGetText;
 
-    public Reference()
-    {
-        sfGetReference = "";
-        sfGetText = "";
-
-    }
     public string sfReference()
     {
         Console.Write("What is the scripture reference? ");

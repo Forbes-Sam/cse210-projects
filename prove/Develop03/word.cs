@@ -8,10 +8,10 @@ class Word
 {
     private string sfText;
     private bool sfIsHidden;
-    public Word(string text, bool hidden)
+    public Word(string text)
     {
         sfText = text;
-        sfIsHidden = hidden;
+        sfIsHidden = false;
     }
     public void sfShow()
     {
